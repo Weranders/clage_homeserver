@@ -177,7 +177,7 @@ class ClageHomeServer:
     username = ""
     password = ""
 
-    def __init__(self, ipAddress, homeserverId, heaterId, password):
+    def __init__(self, ipAddress, homeserverId, heaterId, password, username):
         self.username = DEFAULTUSER
         if (ipAddress is None or ipAddress == ''):
             raise ValueError("ipAddress must be specified")
@@ -191,6 +191,9 @@ class ClageHomeServer:
         if (password is None or password == ''):                                                                                                                                                    
             password = DEFAULTPASSWORD                                                                                                                                                              
         self.password = password 
+        if (username is None or username == ''):                                                                                                                                                    
+            username = DEFAULTUSER                                                                                                                                                              
+        self.username = username 
     
     VERSION = {
         '1.4': '1.4'
