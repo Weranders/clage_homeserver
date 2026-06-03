@@ -1,6 +1,6 @@
 from clage_homeserver import ClageHomeServer
 
-clageHomeServer = ClageHomeServer('192.168.0.78','F8F005DB0CD7','2016FFEE22', '') # <- change to your charger IP
+clageHomeServer = ClageHomeServer('192.168.0.78','F8F005DB0CD7','2016FFEE22', '', '') # <- change to your charger IP
 target_temperature = 50.0
 
 print("=== Devices ===")
